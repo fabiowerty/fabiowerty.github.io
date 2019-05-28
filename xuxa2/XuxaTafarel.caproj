@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>XuxaTafarel</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2htwmx2orbyf7</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>854</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="amigaa" sid="475310547173098">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="BulletType" sid="988406216057937" type="number" />
+                <instance-variable name="isShooting" sid="382485210526198" type="boolean" />
+                <instance-variable name="ShootingInterval" sid="619192048626416" type="number" />
+                <instance-variable name="CurrentEnergy" sid="721949348563905" type="number" />
+                <instance-variable name="isMoveDown" sid="781378437404105" type="boolean" />
+                <instance-variable name="Energy" sid="550134671614534" type="number" />
+                <instance-variable name="HitDamge" sid="948756094190943" type="number" />
+                <instance-variable name="DestroyOnBotton" sid="103789800068614" type="boolean" />
+                <instance-variable name="isInvulnerable" sid="256581318710937" type="boolean" />
+                <instance-variable name="InvulnerableTime" sid="262507595803002" type="number" />
+                <instance-variable name="Shield" sid="674999414509381" type="number" />
+                <instance-variable name="currentInvulnerable" sid="512453342235324" type="number" />
+                <instance-variable name="vvida" sid="296627252209934" type="number" />
+                <instance-variable name="levardano" sid="841819199304627" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="495607025178366">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="8Direction2" sid="981627375601832">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="198929534643979">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="838788727892576">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938879481070699" speed="5">
+                    <frame duration="1" hotspotX="0.430255" hotspotY="0.270833" original-source="C:\Users\20171170150013\Downloads\xquem2012.png">
+                        <image-point name="Gun1" x="0.426326" y="0.263021" />
+                        <collision-poly>
+                            <point x="0.086444" y="0.885417" />
+                            <point x="0.269155" y="0.442708" />
+                            <point x="0.333988" y="0.328125" />
+                            <point x="0.499018" y="0.296875" />
+                            <point x="0.573674" y="0.450521" />
+                            <point x="0.97446" y="0.442708" />
+                            <point x="0.803536" y="0.739583" />
+                            <point x="0.499018" y="0.78125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bala" sid="545728624442156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="cima" pingpong="0" repeatcount="1" repeatto="0" sid="872341647651853" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.228898" original-source="C:\Users\20171170150013\Downloads\fbx.png">
+                        <collision-poly>
+                            <point x="0.162664" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.775326" y="0" />
+                            <point x="0.864621" y="0.228909" />
+                            <point x="0.829895" y="0.738187" />
+                            <point x="0.5" y="0.918157" />
+                            <point x="0.0758492" y="0.883695" />
+                            <point x="0.0436039" y="0.228909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="baixo" pingpong="0" repeatcount="1" repeatto="0" sid="209289490173862" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balacontrole" sid="163746144765563">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Damage" sid="461308743397715" type="number" />
+                <instance-variable name="Passthrough" sid="976472327643738" type="boolean" />
+                <instance-variable name="isPlayer" sid="684304842624752" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="795699486712148">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="657376223847871">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="537871758993050" speed="12">
+                    <frame duration="1" hotspotX="0.4525" hotspotY="0.6675" original-source="C:\Users\20171170150013\Downloads\merda_400x400.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.5" y="0.0875" />
+                            <point x="0.7775" y="0.2225" />
+                            <point x="0.8675" y="0.5" />
+                            <point x="0.8325" y="0.8325" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.0725" y="0.9275" />
+                            <point x="0.04" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="507134676147317">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Keyboard" sid="561009559351019">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type global="1" name="BulletsArray" sid="535977025789020">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="pábaixa" sid="957199200617512">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ButtonUp" pingpong="0" repeatcount="1" repeatto="0" sid="183623977848455" speed="5">
+                    <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="0.234637" y="0.843284" />
+                            <point x="0.184358" y="0.5" />
+                            <point x="0.27933" y="0.186567" />
+                            <point x="0.497207" y="0.0597015" />
+                            <point x="0.715084" y="0.190298" />
+                            <point x="0.804469" y="0.5" />
+                            <point x="0.430168" y="0.619403" />
+                            <point x="0.497207" y="0.623134" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ButtonDown" pingpong="0" repeatcount="1" repeatto="0" sid="697225256466125" speed="5">
+                    <frame duration="1" hotspotX="0.47486" hotspotY="0.395522" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="0.843284" y="0.765363" />
+                            <point x="0.5" y="0.815642" />
+                            <point x="0.186567" y="0.72067" />
+                            <point x="0.0597015" y="0.502793" />
+                            <point x="0.190298" y="0.284916" />
+                            <point x="0.5" y="0.195531" />
+                            <point x="0.619403" y="0.569832" />
+                            <point x="0.623134" y="0.502793" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pácima" sid="316665063381855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ButtonUp" pingpong="0" repeatcount="1" repeatto="0" sid="390901159191129" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.517241" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="0.838028" y="0.164751" />
+                            <point x="0.901408" y="0.517241" />
+                            <point x="0.78169" y="0.83908" />
+                            <point x="0.507042" y="0.969349" />
+                            <point x="0.232394" y="0.835249" />
+                            <point x="0.119718" y="0.517241" />
+                            <point x="0.591549" y="0.394636" />
+                            <point x="0.507042" y="0.390805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ButtonDown" pingpong="0" repeatcount="1" repeatto="0" sid="197172027549561" speed="5">
+                    <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="0.765363" y="0.156716" />
+                            <point x="0.815642" y="0.5" />
+                            <point x="0.72067" y="0.813433" />
+                            <point x="0.502793" y="0.940298" />
+                            <point x="0.284916" y="0.809702" />
+                            <point x="0.195531" y="0.5" />
+                            <point x="0.569832" y="0.380597" />
+                            <point x="0.502793" y="0.376866" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="páesquerda" sid="423169220968399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ButtonUp" pingpong="0" repeatcount="1" repeatto="0" sid="559786701419363" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502793" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ButtonDown" pingpong="0" repeatcount="1" repeatto="0" sid="414510421328716" speed="5">
+                    <frame duration="1" hotspotX="0.52514" hotspotY="0.518657" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="pádireita" sid="650568092146942">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="ButtonUp" pingpong="0" repeatcount="1" repeatto="0" sid="340111493006830" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497207" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="ButtonDown" pingpong="0" repeatcount="1" repeatto="0" sid="571458821973303" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502793" original-source="C:\Users\20171170150013\Downloads\PNG - Seta de mão.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigaa" sid="976086639178186">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Energy" sid="113007880206633" type="number" />
+                <instance-variable name="BulletType" sid="855056554242742" type="number" />
+                <instance-variable name="ShootingInterval" sid="648192607737974" type="number" />
+                <instance-variable name="CurrentEnergy" sid="446098953442661" type="number" />
+                <instance-variable name="HitDamge" sid="284789750353905" type="number" />
+                <instance-variable name="isMoveDonw" sid="389258367001405" type="boolean" />
+                <instance-variable name="DestroyOnBotton" sid="258462884913967" type="boolean" />
+                <instance-variable name="isInvulnerable" sid="740050061317656" type="boolean" />
+                <instance-variable name="InvulnerableTime" sid="574542159369792" type="number" />
+                <instance-variable name="Shield" sid="919975558187753" type="number" />
+                <instance-variable name="CurrentInvulnerableTime" sid="321685830914251" type="number" />
+                <instance-variable name="isShooting" sid="649624455241945" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="709947292094456">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179869521292905" speed="5">
+                    <frame duration="1" hotspotX="-0.11991" hotspotY="0.58209" original-source="C:\Users\20171170150013\Downloads\oie_transparent.png">
+                        <image-point name="Gun1" x="0.282805" y="0.401119" />
+                        <collision-poly>
+                            <point x="0.98567" y="0.0767257" />
+                            <point x="0.764101" y="0.582206" />
+                            <point x="0.68548" y="0.713036" />
+                            <point x="0.485354" y="0.748717" />
+                            <point x="0.394821" y="0.573286" />
+                            <point x="0" y="0.582206" />
+                            <point x="0.116074" y="0.243237" />
+                            <point x="0.485354" y="0.195662" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="distroii" sid="990955574932887">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329037163310886" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tiroinimigo" sid="839266574850316">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="dano" sid="655729381071344" type="number" />
+                <instance-variable name="boolea" sid="572816032324287" type="boolean" />
+                <instance-variable name="play" sid="565240443968318" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="920745269832486">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296967695591717" speed="5">
+                    <frame duration="1" hotspotX="0.510823" hotspotY="0.534743" original-source="C:\Users\20171170150013\Downloads\papel_higienico-600x600.png">
+                        <collision-poly>
+                            <point x="0.335498" y="0.29003" />
+                            <point x="0.510823" y="0.0181269" />
+                            <point x="0.816017" y="0.108761" />
+                            <point x="0.995671" y="0.534743" />
+                            <point x="0.794372" y="0.930514" />
+                            <point x="0.186147" y="0.987915" />
+                            <point x="0.335498" y="0.534743" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="717035151039171">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\20171170150013\Downloads\pixel-heart-2779422_640.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>GameLayout.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>GmeEs.xml</event-sheet>
+        <event-sheet>BulletsES.xml</event-sheet>
+        <event-sheet>hud.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="4" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
